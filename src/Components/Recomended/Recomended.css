@@ -1,0 +1,37 @@
+.recomended{
+    flex-basis: 30%;
+    margin-top: 60px;
+}
+.side-video-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    
+}
+.side-video-list img{
+    flex-basis: 49%;
+    width: 50%;
+}
+.vid-info{
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.vid-info h4{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+/* .vid-info {
+    line-height: 6px;
+} */
+.info-view p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+@media (max-width:900px){
+    .recomended{
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,97 @@
+.sidebar {
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 2%;
+    /* padding-top: 5px; */
+    margin-top: 80px;
+    transition: width 0.3s ease-in-out;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ccc transparent; /* For Firefox */
+    
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sortcut-links img{
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+.sortcut-links {
+    padding-top: 10px;
+    border-radius: 5px;
+    /* background-color: #b0aeae; */
+    /* padding-left: 10px; */
+}
+.side-links{
+    background-color: rgba(172, 172, 172, 0.201);
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 80%;
+    /* margin-right: 80px; */
+}
+.subscribe-list h3{
+    font-size: 20px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+.subscribe-list img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.small-sidebar{
+    width: 6%;
+    padding-left: 10px;
+    overflow-y: auto;
+}
+.small-sidebar p{
+    display: none;
+}
+.small-sidebar h3{
+    display: none;
+}
+.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 25px;
+}
+.side-links.active img{
+    padding-bottom: 2px;
+    border-bottom: 3px solid red;
+}
+@media (max-width:900px){
+    .sidebar{
+        display: none;
+    }
+    
+}
